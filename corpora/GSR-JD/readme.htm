@@ -1,0 +1,574 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META name="GENERATOR" content="IBM HomePage Builder 2001 V5.0.4 for Windows">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<H1 align="center"><B><FONT size="6.5">日本語方言音声コーパスの構築</FONT></B></H1>
+<H2><B><FONT size="5">１．日本語方言音声データの概要</FONT></B></H2><P>　　<FONT size="4">日本語方言音声コーパスの構築に使用した方言音声データは科研費基盤研究Ａ（展開）「日本語方言音声の地域差及び方言音声コーパスの設計・構築に関する研究」の援助によるものである。方言音声データはテキスト読み上げと自然談話によって構成されており、DATに16bit、48kHzで収録された。日本の主要方言地域をカバーするためにデータの収録地は青森、山形、千葉、愛知、富山、奈良、鳥取、香川、福岡の計９地点を選んだ。話者については60歳以上の男性および女性とし、その方言の地方で育ち、そこに長い間住んでいる人を選んだ。また方言の地方、話者の数、年齢、性別、発声内容、独話か対話か、録音受け入れ等の問題に付いて考慮し録音は以下の点に留意して行った。</FONT><BR>
+</P>
+<P><FONT size="4">１）音声の内容はテキスト読み上げ及び自然談話を含む。<BR>
+２）談話の長さは１分以上、３－５分が望ましい。<BR>
+３）方言毎に話者は１０－２０人、男女が大体均等になるようにする。<BR>
+４）録音された音声の書き起こし許可を話者から得る。<BR>
+５）書き起こしの際、強調部分の記述は特に行わない。<BR>
+６）話者は５５才以上、典型的な方言を集める為には６０才以上が望ましい<BR>
+７）名前、年齢、性別、生まれた場所、育った場所等のインフォーマントのデータを集める。<BR>
+８）記録された音声データの使用承諾書を依頼する。<BR>
+９）録音は出来るだけ静かな部屋で行うことが望ましい。</FONT><BR>
+</P>
+<H2><B>２．方言音声コーパスの内容</B></H2>
+<H3><B>２．１　テキスト読み上げ発話</B></H3>
+<P>　　<FONT size="4">テキスト読み上げ発話とは表１に示すテキストを方言話者に提示し、方言話者に日常話しているように発話してもらったものを収録した音声データである。共通語のテキストの方言による音声表現なのでテキスト通りの発話がなされているとは限らない。<BR>
+</FONT></P>
+<P align="center"><FONT size="4">表１　テキスト読み上げ発話の発話内容</FONT></P>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD><FONT size="4">発話番号</FONT></TD>
+      <TD></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD><FONT size="4">近隣の人との挨拶における発話</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１</FONT></TD>
+      <TD><FONT size="4">　 おはようございます　</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">２</FONT></TD>
+      <TD><FONT size="4">　 ご精がでますね　</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">３</FONT></TD>
+      <TD><FONT size="4">　 ごめんください</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">４</FONT></TD>
+      <TD><FONT size="4">　 どうぞお上がりください</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">５</FONT></TD>
+      <TD><FONT size="4">　 こんばんは</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">６</FONT></TD>
+      <TD><FONT size="4">　 ありがとうございます</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">７</FONT></TD>
+      <TD><FONT size="4">　 どうもすみません　</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">８</FONT></TD>
+      <TD><FONT size="4">　 さようなら　</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"></TD>
+      <TD><FONT size="4">電話での対応</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">９</FONT></TD>
+      <TD><FONT size="4">　 もしもし、佐藤さんですか。　</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１０</FONT></TD>
+      <TD><FONT size="4">　 いいえ、違います。山野です。</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"></TD>
+      <TD><FONT size="4">母音の発音</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１１</FONT></TD>
+      <TD><FONT size="4">　 あいうえお</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"></TD>
+      <TD><FONT size="4">数の数え方</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１２</FONT></TD>
+      <TD><FONT size="4">　 １、 ２、 ３、 ４、 ５、６、７、８、９、１０</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１３</FONT></TD>
+      <TD><FONT size="4">　 ひ、ふ、み、よ、いつ、む、なな、や、ここのつ、と</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１４</FONT></TD>
+      <TD><FONT size="4">　 ２、 ４、 ６、 ８、１０</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"></TD>
+      <TD><FONT size="4">電話番号の読み上げ</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１５</FONT></TD>
+      <TD><FONT size="4">　 0467-41-2436</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１６</FONT></TD>
+      <TD><FONT size="4">　 0298-53-5206</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１７</FONT></TD>
+      <TD><FONT size="4">　 06-6850-5131</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１８</FONT></TD>
+      <TD><FONT size="4">　 0426-77-2136</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">１９</FONT></TD>
+      <TD><FONT size="4">　 075-753-7799</FONT></TD>
+    </TR>
+    <TR>
+      <TD align="right"><FONT size="4">２０</FONT></TD>
+      <TD><FONT size="4">　 099-285-7557</FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<H3>２．２　自然談話</H3>
+<P>　　<FONT size="4">方言話者間、または調査者と方言話者で自由に話した発話を収録したものを自然談話と呼ぶ。内容は方言話者の幼少期の話や戦時中の体験談、最近の話など多岐にわたり、内容も収録時間も異なっている。</FONT><BR>
+　　</P>
+<H3>２．３　収録データの内訳</H3>
+<P>　　<FONT size="4">収録した音声データの内訳を示す。各音声データは話者１～３名ごとにDATに量子化精度16bit、サンプリング周波数48kHzで収録された。</FONT><BR>
+</P>
+<H3>２．３．１　話者数</H3>
+<P>　　<FONT size="4">表２に収録話者数を、表３に収録時間を示す。音声データの総収録時間は約１４５時間程になった。<BR>
+</FONT></P>
+<P align="center"><FONT size="4">表２　方言音声データの話者数（名）</FONT></P>
+<CENTER>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">　地　 域　</FONT></B></TD>
+      <TD valign="middle" align="center"><B>　</B><B><FONT size="+1">男　 性　</FONT></B></TD>
+      <TD valign="middle" align="center"><B>　</B><B><FONT size="+1">女　 性　</FONT></B></TD>
+      <TD valign="middle" align="center"><B>　</B><B><FONT size="+1">合　 計　</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">青森県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">7</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">13</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">山形県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">12</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">千葉県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">4</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">9</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">13</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">愛知県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">5</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">11</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">富山県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">17</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">23</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">奈良県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">12</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">9</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">21</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">鳥取県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">9</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">15</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">香川県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">8</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">7</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">15</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">福岡県</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">4</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">6</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">10</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">合　計</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">57</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">76</FONT></B></TD>
+      <TD valign="middle" align="center"><B><FONT size="+1">133</FONT></B></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</CENTER>
+<P><BR>
+</P>
+<P align="center"><FONT size="4">表３　方言音声データの収録時間（分）</FONT></P>
+<CENTER>
+<BLOCKQUOTE>
+<BLOCKQUOTE>
+<TABLE border="1">
+  <TBODY>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">　地　 域　</FONT></B></TD>
+      <TD><B><FONT size="+1">　　収 録 時 間　　</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">青森県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">924.2</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">山形県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">571.4</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">千葉県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">1059.5</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">愛知県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">549.5</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">富山県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">1395.3</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">奈良県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">2328.9</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">鳥取県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">903.2</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">香川県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">1025</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">福岡県</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">550</FONT></B></TD>
+    </TR>
+    <TR>
+      <TD valign="middle" align="center"><B><FONT size="+1">合　計</FONT></B></TD>
+      <TD align="center"><B><FONT size="+1">8757</FONT></B></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</BLOCKQUOTE>
+</CENTER>
+<P><BR>
+</P>
+<H3>２．３．２　年齢別内訳</H3>
+<P>　<FONT size="4">図１にこれまでに収録した話者の年齢別内訳を示す。全体では７１～７５歳の話者が最も多く、次いで７５～８０歳の話者が多くなっている。また６０歳以下の話者や９０歳以上の高齢の話者もみられる。<BR>
+　地域別で見ると比較的幅広い年齢分布をとっているのが青森県、奈良県、富山県である。特に青森県では９１歳という今回収録した中では最も高齢の女性の収録も行われている。また富山県は女性が多く、奈良県は男性が多い。逆に年齢分布が狭いのは千葉県、愛知県で７０歳代に話者が集中している。山形県は比較的若い年齢の話者を中心に収録されていて７５歳以下の話者で構成されている。香川県、鳥取県では７０歳台に話者がやや集中している。</FONT><BR>
+　</P>
+<P align="center"><IMG src="image1.gif" width="604" height="302" border="0">　</P>
+<P align="center">図１　方言話者全体の年齢分布</P>
+<P><BR>
+</P>
+<H2>３．日本語方言音声コーパスの構築</H2>
+<P>　　<FONT size="4">第２章で示した方言音声データから方言音声コーパスを構築する。コーパス中の音声データは16bit、16kHzのwavファイルで話者毎にディレクトリに分けられCD-ROMに格納される。音声コーパスは以下の流れで構築される。<BR>
+　　</FONT></P>
+<P><FONT size="4">１） 音声データの編集<BR>
+２） テキスト書き起こし<BR>
+３） 方言音声コーパスの作成</FONT><BR>
+　</P>
+<P><BR>
+</P>
+<H3>３．１<FONT size="4"> </FONT> 音声データの編集</H3>
+<P>　　<FONT size="4">音声データは二つの部分からなり、一つは共通語のテキストの読み上げ表現であるテキスト読み上げ、もう一つが方言話者間、もしくは収録者と方言話者で自由に話す自由談話である。方言音声データは話者毎にDATテープに16bit，48kHzで収録されているのでまずDATから音声データをそのまま取り込み、必要な部分毎に切り出し最後に16kHzにリサンプリングを行う。しかし方言音声データの収録は、一般の家庭や公民館、寺社などで行われているため、方言話者と調査者だけでなくそれ以外の様々な雑音も収録されている。その為以下のようにして音声データの編集を行った。</FONT><BR>
+　</P>
+<P><BR>
+</P>
+<H3>３．１．１<FONT size="4"> </FONT> テキスト読み上げ</H3>
+<P>　　<FONT size="4">テキスト読み上げ発話については同じ発話を１～３回収録しているため、以下の条件を設定し、最も良い状態の音声データについて編集を行った。<BR>
+</FONT><BR>
+</P>
+<P><FONT size="4">１）　方言話者の発話に言い誤り、言い詰まりなどが無く良好に収録されているもの<BR>
+２） 調査者の音声が収録されていないもの<BR>
+３） その他雑音等が収録されていないもの・</FONT><BR>
+</P>
+<P><FONT size="4">なお各テキスト読み上げ発話の切り出しの際は前後に100～300msecの無音区間を設けてある。<BR>
+</FONT></P>
+<P><BR>
+</P>
+<H3>３．１．２<FONT size="4"><FONT size="4"> </FONT> </FONT>自然談話</H3>
+<P>　<FONT size="4">自然談話については方言発話者の自然な音声についての分析を行うため、一つのまとまりとして扱い、セグメンテーションは行わない。また談話の連続性を保つため、テキスト読み上げ発話の編集時のような雑音回避は行わない。<BR>
+</FONT></P>
+<P><BR>
+</P>
+<H3>３．２<FONT size="4"> </FONT>テキスト書き起こし</H3>
+<P>　　<FONT size="4">発話内容を聞き取り、その内容をテキストに書き取る。以下に自然談話の書き起こしテキストの例を示す。</FONT><BR>
+</P>
+<P><BR>
+</P>
+<BLOCKQUOTE>
+<BLOCKQUOTE><FONT size="4">自然談話書き起こしテキストの例（山形県男性二人の対話）</FONT></BLOCKQUOTE>
+</BLOCKQUOTE>
+<P><BR>
+</P>
+<DIV align="left">
+<BLOCKQUOTE>
+<TABLE>
+  <TBODY>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">方言話者</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">方言話者</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">トコロデ　アノー　ナンダ　ユーリョージンジャノ　サンパイ　　アノケン</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">ところで　あのー　なんだ　優良神社の　　　　　参拝　　　　あの件</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">　 　 　　 　 　　 　　 　　　 　 　　　　
+      　　　　 　　　　　　 　 アー　　　　　ア</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　　　　　　　　　　　　　 　 　 　 　　
+      　 　 　　 　 　　　　　　 あー　　　　　あ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">アレー　オレ　ズット　 ヨサン　ミタケドノ
+      　 　 　 キョネンマデ　ゴマンエンナケドモ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">あれー　俺　　ずっと　予算　　見たんだけど　　去年まで　　
+      五万円だったんだけど</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">　 　 　 　　 　　 　 　 　　　　　　 　　
+      　　　 　 ウン</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　 　 　 　 　 　　 　　 　 　 　 　　　　　　　　
+      　うん</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">コドシカラ 　 ロクマンエンニ　ナッタッケカラ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">今年から　　六万円に　 　 　 なったから</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">　 　 　　 　 　　 　　 　　 　 　　　 　
+      　　　　 コトシモ　アップ　ナッタデアナ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　 　　　　 　 　 　 　　　　 　　　 　　
+      　 　 　 今年もアップしてあったか</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">ナッタケカラ　アレダ　アノー 　 ログニンイッデモ
+      　 オレ　ケッセキスルー</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">なったから　　あれだ　あのー　六人で行っても　
+      　 俺　　欠席する</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">　　　　　 　 　 　 　 　 　 　 　 　 　
+      　 　 　 　 　　　 　 　 　　 　　　　　ドウシテヨ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　 　　 　　 　　 　　 　　 　　 　　 　　
+      　 　　 　　 　　 　 　 　 　 　　　　どうして</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">　　 　 　　　 オレ　ケッセキ　スッカラー　ログニンデ　イッテモラエ　　　シテ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　　 　 　　　 俺　　欠席　　　 するから　　六人で　　　
+      行ってもらえ　　 そして</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">ダメンダゼー　 　 　　 　　 　　 　　　 　ウン</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">だめだよー　 　 　 　 　　 　　 　　　　　うん</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">タノム　　　　アー　　　　　　　イッテ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">頼む　　　 　あー　　　　　　　いいって</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">　　　ダメヤー　　　ヤッパリ　ワー　イカネーバヤ
+      　 　 ンダバ　オレダッテ　ズット</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　　　だめだー 　　 やっぱりあなたも行かなければ　　そしたら　俺だって　ずっと　</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">A)</FONT></TD>
+      <TD width="567"><FONT size="4">　　　　　　　　ソレワヤ　ホレ　ログニンノウヅダハゲ　　　　ンダンダ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">　　　　　　　　それは　　ほら　六人の内だったから　　　　
+      そうだそうだ</FONT></TD>
+    </TR>
+    <TR>
+      <TD><FONT size="4">B)</FONT></TD>
+      <TD width="567"><FONT size="4">イッターンダモシ 　 　 　 　 　 　 　　　　　　　　　　　
+      ンダンダ</FONT></TD>
+    </TR>
+    <TR>
+      <TD></TD>
+      <TD width="567"><FONT size="4">行ったんだし　 　 　 　 　 　 　 　 　 　
+      　　　　　　　　そうだそうだ</FONT></TD>
+    </TR>
+  </TBODY>
+</TABLE>
+</BLOCKQUOTE>
+</DIV>
+<P><BR>
+</P>
+<H3>３．３　方言音声コーパスの作成</H3>
+<P>　 <FONT size="4">16kHzにリサンプリングしたwavファイルを発話者毎のディレクトリに分け、書き起こしテキストを付けてＣＤに書き込む事で方言音声コーパスが完成する。構築した日本語方言音声コーパスのファイル名とディレクトリ構造は以下の様になる。</FONT><BR><BR>
+</P>
+<P><FONT size="4">１）テキスト読み上げ発話<BR>
+ディレクトリ：県名/wav/Text/性別+テープ番号/<BR>
+　(例)　Toyama/wav/Text/f01/、Toyama/wav/Text/f02/<BR>
+音声ファイル名：県名_性別+テープ番号_発話番号.wav<BR>
+　(例)　富山県、女性、テープ番号１、発話番号１→　Toyama_f01_01.wav　</FONT><BR><BR>
+</P>
+<P><FONT size="4">２）自然談話<BR>
+ディレクトリ：県名/wav/Danwa/ <BR>
+　(例)　Toyama/wav/Danwa/<BR>
+音声ファイル名：県名_性別+テープ番号_発話番号(+L又は+R).wav<BR>
+　(例)　富山県、女性、テープ番号１、発話番号２１（独話）→　Toyama_f01_21.wav<BR>
+　(例)　富山県、テープ番号２、発話番号２２（対話）<BR>
+　 　　　Lチャンネル男性、Rチャンネル女性の対話でLチャンネルの方の男性話者→　Toyama_mf02_22L.wav<BR>
+　 　 　 Lチャンネル男性、Rチャンネル女性の対話でRチャンネルの方の女性話者→　Toyama_mf02_22R.wav<BR>
+自然談話が独話でステレオ録音の場合、LとRで明瞭に聞こえるほうを使用した。<BR>
+<BR>
+</FONT></P>
+<P><FONT size="4">３）書き起こしテキスト<BR>
+ディレクトリ：県名/Text/(Danwa/またはText/)<BR>
+　（例）　Toyama/Text/Text/f01/、Toyama/Text/Danwa/<BR>
+ファイル名：音声ファイル名.txt<BR>
+　(例)　 富山県、女性、テープ番号１、発話番号１　→　Toyama_f01_01.txt<BR>
+<BR>
+　 　 　 　</FONT></P>
+<P align="left"><FONT size="4">４）その他<BR>
+　１本のテープで２回テキスト読み上げを行っている場合、１回目と２回目をa、bで区別した。<BR>
+　(例)　 奈良県、テープ番号８、１回目男性、２回目女性<BR>
+　 　 　 　Nara/wav/m08a/ 　 　 （１回目）
+<BR>
+　 　 　 　 　 　　 　Nara_m08a_01.wav<BR>
+　 　 　 　 　 　　 　Nara_m08a_02.wav<BR>
+　　　　　　　　　　　　　　　 ・</FONT></P>
+<P><FONT size="4">　　　　　　　　　　　　　　　 ・</FONT></P>
+<P><FONT size="4">　 　 　 　Nara/wav/f08b/ 　 　　 （２回目）<BR>
+　 　 　 　 　 　　Nara_f08b_01.wav<BR>
+　 　 　 　 　 　　Nara_f08b_02.wav</FONT><BR>
+<FONT size="4">　　　　　　　　　　　　　　　 ・</FONT>　</P>
+<P><FONT size="4">　　　　　　　　　　　　　　　 ・</FONT></P>
+<P><FONT size="4">自然談話が対話でステレオ録音のLとRの区別がつかない場合、強制的に一方をL、もう一方をRとした。<BR>
+愛知県の女性データ1名（テープ番号２）は、ノイズのためファイルから除いた。<BR>
+</FONT></P>
+<P>　 　　　</P>
+<P><BR>
+</P>
+<H2>４．まとめ</H2>
+<P>　<FONT size="4">青森、山形、千葉、愛知、富山、奈良、鳥取、香川、福岡の９地点計133名からなる日本語方言音声コーパスを構築した。日本語方言音声コーパスの構築は予想以上の大量の音声データ、収録環境による音声データ中の外部雑音等に苦戦の連続であった。なお、本解説は参考文献[6]の一部を加筆・修正したものである。<BR>
+<BR>
+</FONT></P>
+<P><FONT size="4">謝辞<BR>
+　本研究の一部は科研費基盤研究A（展開）「日本語方言音声の地域差および方言音声コーパスの設計・構築に関する研究」の援助を受けた。<BR>
+<BR>
+</FONT></P>
+<P><FONT size="4">　参考文献<BR>
+　</FONT></P>
+<P><FONT size="4">[1] 平山輝男　“日本の方言”　講談社(1998)<BR>
+[2] 板橋秀一　“音声コーパス” 情報処理学会誌38巻、11号
+pp．1012-1018 (1997)<BR>
+[3] 清水信昭、照沼篤、山本幹雄、板橋秀一“日本語方言音声コーパスの構築と分析”日本音響学会春季研究発表会講演論文集、2-6-2,
+pp. 285-286 (2001.3)<BR>
+[4] 嶋田幹貴、橘田裕也、山本幹雄、板橋秀一“日本語方言音声コーパスの構築と分析”
+日本音響学会春季研究発表会講演論文集、2-10-15,
+pp. 293-294 (2002.3)<BR>
+[5] 照沼篤　“日本語方言音声コーパスの構築と分析”筑波大学第三学群情報学類卒業論文(2000.2)<BR>
+[6]　橘田裕也“日本語方言音声コーパスの構築とその分析”筑波大学第三学群情報学類卒業研究論文(2002.2)<BR>
+</FONT></P>
+<P><BR><BR>
+</P>
+<P>　</P>
+<P>　</P>
+</BODY>
+</HTML>
